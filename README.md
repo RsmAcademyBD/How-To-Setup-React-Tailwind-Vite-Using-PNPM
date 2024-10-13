@@ -1,6 +1,8 @@
 # Setup React & Tailwind & Vite Using PNPM
 Presenting brand new Article: In this article you will learn how to set up tailwind css with create-react-app using pnpm. Just follow the steps in the Article. More article about Android Application And Web Development will uploaded so get in touch with the channel. So you are no more far. You can be developer.
-![image](https://github.com/user-attachments/assets/3da6d9b2-c133-4cee-ab9c-7b784c777035)
+
+![image](https://github.com/user-attachments/assets/cd2fd433-db58-46a4-8808-074fae20de29)
+
 ## 1. Install pnpm and create a new react project
 ```bash
 pnpm i
