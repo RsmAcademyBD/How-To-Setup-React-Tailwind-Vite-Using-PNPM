@@ -6,10 +6,13 @@ Presenting brand new Article: In this article you will learn how to set up tailw
 ## 1. Install pnpm and create a new react project
 ```bash
 pnpm i
-And
-pnpm create vite my-project
+-----------and press enter---------
+Then.........
 
-And follow next commands ....
+pnpm create vite my-project
+-----------and press enter---------
+
+Then follow next commands ....
 Select - React
 -----------and press enter---------
 
