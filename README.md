@@ -21,39 +21,34 @@ cd my-project
 ```bash
 pnpm i
 ```
-## 3. Install Tailwind CSS with postcss & autoprefixer
+## 3. Install Tailwind CSS
 ```bash
-pnpm add -D tailwindcss postcss autoprefixer
+pnpm install tailwindcss @tailwindcss/vite
 ```
-## 4. Generate tailwind.config.js and postcss.config.js
-```bash
-pnpm tailwindcss init -p
-```
-## 5. Configure your template paths
+## 5. Configure your Vite plugin
 
-- Add the paths to all of your template files in your tailwind.config.js file.
+- Add the @tailwindcss/vite plugin to your Vite configuration.
 ```jsx
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import tailwindcss from "@tailwindcss/vite";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+});
+
 
 ```
-## 6. Add the Tailwind directives to your CSS
+## 5. Add the Tailwind directives to your CSS
 
 - Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
 
 ```jsx
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 ```
 
-## 7. Start your build process
+## 6. Start your build process
 
 - Run your build process with npm run start.
 
